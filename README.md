@@ -9,3 +9,5 @@ This is A Demo Repository For Learning Git and Version Control Systems like SubV
 7.git log
 8.git status -A
 9.git status -a -m "Commit Message"
+10.git branch "<Branch Name>"
+11.git checkout <Branch name>
