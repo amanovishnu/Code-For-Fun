@@ -15,3 +15,4 @@ This is A Demo Repository For Learning Git and Version Control Systems like SubV
 13.git rebase branchname
 14.ssh -keygen
 15.git push remote origin
+16.git checkout first 8 digit hexcode filename
