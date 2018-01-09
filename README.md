@@ -12,3 +12,6 @@ This is A Demo Repository For Learning Git and Version Control Systems like SubV
 10.git branch "<Branch Name>"
 11.git checkout <Branch name>
 12.git merge branchname
+13.git rebase branchname
+14.ssh -keygen
+15.git push remote origin
