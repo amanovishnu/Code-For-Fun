@@ -1,0 +1,31 @@
+body {
+	text-align:center;
+	font-family:consolas;
+	background-color:red;
+	line-height:15px;
+	padding:50px;
+}
+body:first-letter{
+	font-weight:bold;
+	font-style:italic;
+	font-size:2em;
+}
+a:link {
+	color:blue;
+	text-decoration:none;
+	font-weight:bold;
+	font-style:italic;
+	font-size:1.5em;
+}
+p:first-letter {
+	color:pink;
+	font-weight:bold;
+	font-style:italic;
+	font-size:1.5em;
+}
+p{
+	color:pink;
+	font-weight:bold;
+	font-style:italic;
+	font-size:1.5em;	
+}
