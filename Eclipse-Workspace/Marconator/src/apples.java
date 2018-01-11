@@ -1,6 +1,8 @@
+import java.util.Scanner;
 public class apples {
-	public static void main(String[] srgs) {
-		System.out.println("Hello RedHat Developer Program");
-		System.out.println("Java EE Enterprise Edition for Java Developers");
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		System.out.println("HelloWorld");
+		
 	}
 }
