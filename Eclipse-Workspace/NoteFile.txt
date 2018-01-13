@@ -1,0 +1,2 @@
+JavaFX is a Media/Graphics Framework for Creating GUI's in Java Applications
+it was Developed as a response to Flash and Shock wave
