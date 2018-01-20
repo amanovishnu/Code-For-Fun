@@ -6,7 +6,6 @@ import javafx.scene.layout.*;
 import javafx.scene.control.*;
 import javafx.event.*;
 import javafx.geometry.*;
-
 public class Main extends Application {
 	Label response;
 	public static void main(String[] args) {

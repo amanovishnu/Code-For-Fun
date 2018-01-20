@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label alignment="CENTER" layoutX="40.0" layoutY="21.0" prefHeight="40.0" prefWidth="220.0" text="Create Account">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField layoutX="40.0" layoutY="72.0" prefHeight="25.0" prefWidth="220.0" promptText="Name" />
+      <TextField layoutX="40.0" layoutY="111.0" prefWidth="220.0" promptText="User Name" />
+      <TextField layoutX="40.0" layoutY="149.0" prefWidth="220.0" promptText="Email Address" />
+      <TextField layoutX="40.0" layoutY="186.0" prefWidth="220.0" promptText="Password" />
+      <TextField layoutX="40.0" layoutY="269.0" prefWidth="220.0" promptText="Secret Answer" />
+      <Button layoutX="40.0" layoutY="310.0" mnemonicParsing="false" prefWidth="220.0" text="Button">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <ComboBox fx:id="combobox" layoutX="40.0" layoutY="231.0" prefWidth="220.0" promptText="Select your Secret Question" visibleRowCount="2">
+      	
+      </ComboBox>
+      <Hyperlink layoutX="72.0" layoutY="346.0" text="Already Registered ? Sign in" />
+   </children>
+</AnchorPane>

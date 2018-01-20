@@ -1,0 +1,11 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+ .button {
+	-fx-background-color:#1e90ff ;
+	-fx-text-fill:white;	
+}
+.root{
+	-fx-background-color:  #fffafa;
+}
+.combobox {
+	-fx-background-color:black;
+}
