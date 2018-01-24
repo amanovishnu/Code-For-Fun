@@ -38,15 +38,22 @@ public class Main {
 		/*DBObject dbObject = collection.findOne();
 	    System.out.println(dbObject);*/
 		
-		BasicDBObject whereQuery = new BasicDBObject();
+		//Selecting Database with Limited Feilds
+		/*BasicDBObject whereQuery = new BasicDBObject();
 	    whereQuery.put("employeeId", 5);
 	    BasicDBObject fields = new BasicDBObject();
 	    fields.put("employeeId", 1);
-	  
 	    DBCursor cursor = collection.find(whereQuery, fields);
 	    while (cursor.hasNext()) {
 	        System.out.println(cursor.next());
-	    }
+	    }*/
+		
+		 BasicDBObject whereQuery = new BasicDBObject();
+		 whereQuery.put("employeeId", 5);
+		 DBCursor cursor = collection.find(whereQuery);
+		 while(cursor.hasNext()) {
+		 System.out.println(cursor.next());
+		    }
 	
 	}	
 }
