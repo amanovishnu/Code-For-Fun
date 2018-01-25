@@ -1,0 +1,23 @@
+<%--S4S5TriangleForm.jsp--%>
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Triangle Computation</title>
+	</head>
+	<body>
+		<%! double a,b,c,area,perimeter;
+			double getArea() {
+				double s = getPerimeter()/2;
+				return Math.sqrt(s*(s-a)-(s-b)*(s-c));
+			}
+			double getPerimeter() {
+				return a+b+c;
+			}
+		%>
+		<%  a=Double.parseDouble(request.getParameter("a"));
+			a=Double.parseDouble(request.getParameter("b"));
+			a=Double.parseDouble(request.getParameter("c"));
+			out.print("Area= "+getArea()+", Perimeter= "+getPerimeter());
+		%>
+	</body>
+</html>
