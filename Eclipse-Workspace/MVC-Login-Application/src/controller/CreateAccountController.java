@@ -13,6 +13,7 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.ComboBox;
+import javafx.scene.control.DatePicker;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
@@ -26,6 +27,7 @@ public class CreateAccountController implements Initializable {
 	@FXML TextField createpassword;
 	@FXML TextField createanswer;
 	@FXML Label createlabelstatus;
+	@FXML DatePicker createdateofbirth;
 	public void createaccount(ActionEvent event) throws Exception {
 		if(loginModel.isregister(createname.getText(),createusername.getText(),createemail.getText(),createpassword.getText(),createcombobox.getSelectionModel().getSelectedItem(),createanswer.getText())) {
 				createlabelstatus.setText("Account Created");

@@ -1,5 +1,6 @@
 package model;
 import java.sql.*;
+
 public class MainModel {
 	Connection connection;
 	public MainModel () {
