@@ -1,4 +1,4 @@
-package application;
+package model;
 import java.sql.*;
 public class SqliteConnection {
 	public static Connection Connector() {

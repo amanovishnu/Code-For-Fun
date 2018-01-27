@@ -19,6 +19,6 @@
             <Font name="System Bold Italic" size="48.0" />
          </font>
       </Label>
-      <Button layoutX="526.0" layoutY="23.0" mnemonicParsing="false" onAction="#usersignout" text="Signout" />
+      <Button layoutX="526.0" layoutY="23.0" mnemonicParsing="false" onAction="#welcomesignout" text="Signout" />
    </children>
 </AnchorPane>

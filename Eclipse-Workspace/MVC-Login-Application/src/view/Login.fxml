@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="350.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+<AnchorPane prefHeight="350.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1"  fx:controller="controller.LoginController">
    <children>
       <TextField fx:id="loginusername" layoutX="135.0" layoutY="106.0" prefWidth="220.0" promptText="Enter your Username" />
       <Label layoutX="50.0" layoutY="106.0" prefHeight="25.0" prefWidth="76.0" text="Username :">
@@ -20,7 +20,7 @@
       </Label>
       <ImageView fitHeight="175.0" fitWidth="175.0" layoutX="379.0" layoutY="69.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../Login2.png" />
+            <Image url="@../resources/Login2.png" />
          </image>
       </ImageView>
       <Label layoutX="50.0" layoutY="156.0" prefHeight="25.0" prefWidth="76.0" text="Password :">
@@ -54,7 +54,7 @@
             <Font name="System Bold" size="12.0" />
          </font>
       </Hyperlink>
-      <Label fx:id="loginlabelstatus" alignment="CENTER" layoutX="379.0" layoutY="254.0" prefHeight="25.0" prefWidth="175.0" textFill="#f23506">
+      <Label fx:id="loginlabelstatus" alignment="CENTER" layoutX="387.0" layoutY="242.0" prefHeight="25.0" prefWidth="175.0" text="Login Satus" textFill="#f23506">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>

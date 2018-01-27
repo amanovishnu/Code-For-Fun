@@ -1,15 +1,17 @@
-package application;
+package controller;
+import javafx.scene.Node;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
-public class MainController {
-	public LoginModel loginModel = new LoginModel();
+import model.MainModel;
+
+public class LoginController {
+	public MainModel loginModel = new MainModel();
 	@FXML TextField loginusername;
 	@FXML TextField loginpassword;
 	@FXML Label loginlabelstatus;
@@ -18,9 +20,9 @@ public class MainController {
 			loginlabelstatus.setText("Login Success");
 			((Node)event.getSource()).getScene().getWindow().hide();
 			Stage primaryStage = new Stage();
-			Parent rootnode = FXMLLoader.load(getClass().getResource("/application/Welcome.fxml"));
+			Parent rootnode = FXMLLoader.load(getClass().getResource("/view/Welcome.fxml"));
 			Scene scene = new Scene(rootnode);
-			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+			scene.getStylesheets().add(getClass().getResource("/resources/application.css").toExternalForm());
 			primaryStage.setScene(scene);
 			primaryStage.setTitle("JavaFx Application");
 			primaryStage.show();
@@ -31,41 +33,24 @@ public class MainController {
 		}
 	}
 	
-
 	public void clickheretoregister(ActionEvent event) throws Exception {
 		((Node)event.getSource()).getScene().getWindow().hide();
 		Stage primaryStage = new Stage();
-		Parent rootnode = FXMLLoader.load(getClass().getResource("/application/CreateAccount.fxml"));
+		Parent rootnode = FXMLLoader.load(getClass().getResource("/view/CreateAccount.fxml"));
 		Scene scene = new Scene(rootnode);
-		scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+		scene.getStylesheets().add(getClass().getResource("/resources/application.css").toExternalForm());
 		primaryStage.setScene(scene);
 		primaryStage.setTitle("JavaFx Application");
 		primaryStage.show();
 	}
-	
 	public void forgotpassword(ActionEvent event) throws Exception {
 		((Node)event.getSource()).getScene().getWindow().hide();
 		Stage primaryStage = new Stage();
-		Parent rootnode = FXMLLoader.load(getClass().getResource("/application/ForgotPassword.fxml"));
+		Parent rootnode = FXMLLoader.load(getClass().getResource("/view/ForgotPassword.fxml"));
 		Scene scene = new Scene(rootnode);
-		scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+		scene.getStylesheets().add(getClass().getResource("/resources/application.css").toExternalForm());
 		primaryStage.setScene(scene);
 		primaryStage.setTitle("JavaFx Application");
 		primaryStage.show();
 	}
-	
-	public void welcomesignout(ActionEvent event) throws Exception {
-		((Node)event.getSource()).getScene().getWindow().hide();
-		Stage primaryStage = new Stage();
-		Parent rootnode = FXMLLoader.load(getClass().getResource("/application/Login.fxml"));
-		Scene scene = new Scene(rootnode);
-		scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
-		primaryStage.setScene(scene);
-		primaryStage.setTitle("JavaFx Application");
-		primaryStage.show();
-	}
-	
-	
-	
-	
 }

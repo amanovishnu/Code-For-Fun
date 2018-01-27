@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController2">
+<AnchorPane prefHeight="400.0" prefWidth="600.0"  xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CreateAccountController">
    <children>
       <Label layoutX="164.0" layoutY="22.0" text="Create Account">
          <font>
@@ -53,7 +53,7 @@
       <TextField fx:id="createemail" layoutX="140.0" layoutY="154.0" prefWidth="220.0" promptText="Enter your Email Address" />
       <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="408.0" layoutY="74.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../create.png" />
+            <Image url="@../resources/create.png" />
          </image>
       </ImageView>
       <Label fx:id="createlabelstatus" alignment="CENTER" layoutX="391.0" layoutY="267.0" prefHeight="23.0" prefWidth="184.0" text="Account Status" textFill="#fc1803">

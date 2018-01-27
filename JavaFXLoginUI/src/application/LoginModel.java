@@ -35,10 +35,10 @@ public class LoginModel {
 			
 		} catch (Exception e) {
 			return false;
-		} /*finally {
+		} finally {
 			preparedStatement.close();
 			resultSet.close();
-		}*/
+		}
 	}
 	public boolean isrelogin(String email,String security) throws SQLException {
 		PreparedStatement preparedStatement = null;
@@ -57,41 +57,29 @@ public class LoginModel {
 			
 		} catch (Exception e) {
 			return false;
-		} /*finally {
+		} finally {
 			preparedStatement.close();
 			resultSet.close();
-		}*/
+		}
 	}
 	/****************************************************************************************************************************/
-	public boolean isregister(String rname,String runame,String remail, String rpass,String rsec) throws SQLException {
-		PreparedStatement preparedStatement = null;
-		ResultSet resultSet = null;
+	public boolean isregister(String name,String username,String email, String password,String securityanswer) throws SQLException {
 		String query = "INSERT INTO logindata (Name,Username,EmailAddress,Password,SecurityAnswer) VALUES (?,?, ?, ?, ?)";
-		try {
-			preparedStatement = connection.prepareStatement(query);
-			preparedStatement.setString(1,rname);
-			preparedStatement.setString(2,runame);
-			preparedStatement.setString(3,remail);
-			preparedStatement.setString(4,rpass);
-			preparedStatement.setString(5,rsec);
-			resultSet = preparedStatement.executeQuery();
-			if(resultSet.next()) {
-				int rowsInserted = preparedStatement.executeUpdate();
-				if (rowsInserted > 0) {
-				    System.out.println("A new user was inserted successfully!");
-				}
-				return true;
-			} else {
-				return false;
-			}
-			
-		} catch (Exception e) {
-			return false;
-		} /*finally {
-			preparedStatement.close();
-			resultSet.close();
-		}*/
-	}
+		try (PreparedStatement pstmt = connection.prepareStatement(query)) {
+            pstmt.setString(1, name);
+            pstmt.setString(2, username);
+            pstmt.setString(3, email);
+            pstmt.setString(4, password);
+            pstmt.setString(5, securityanswer);
+            pstmt.executeUpdate();           
+           // System.exit(1);
+        } catch (SQLException e) {
+            System.out.println(e.getMessage());
+           
+        }
+		return false;
+    }
+}
 	/*************************************************************************************************************************/
 	
-}
+
