@@ -1,0 +1,21 @@
+@charset "ISO-8859-1";
+ {
+	font-weight: bold;
+	background-color:#3366ff;
+	
+}
+body {
+	text-align:left;
+	background-color:white;
+}
+form {
+	font-family: arial;
+	width: 100%;
+}
+input {
+ 	float: right;
+ 	width : 400px;
+}
+#studhead{
+	text-align:center;
+}
