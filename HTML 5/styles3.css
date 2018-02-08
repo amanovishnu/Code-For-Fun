@@ -1,0 +1,86 @@
+body {
+	background-color: black;
+	color: green;
+	text-align: justify;
+	font-family: calibri,Consolas,Constantia,Sans-serif;
+	width: 80%;
+	margin-right: auto;
+	margin-left: auto;
+	text-transform: capitalize;
+}
+header {
+	background-color: green;
+	color: black;
+	padding: 10px;
+	overflow: hidden;;
+}
+a:link {
+	text-decoration:none;
+	color: black;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+a:hover{
+	text-decoration: underline;
+	color: red;
+	text-transform: uppercase;
+	font-size: 1.2em;
+}
+a:visited{
+	text-decoration: none;
+	color: black;
+	text-transform: uppercase;;
+}
+img {
+	float: right;
+	border-width: 5px;
+	margin :10px;
+	border-color: green;
+	border-style: groove; 
+}
+hgroup{
+	line-height: 10px;
+	width: 70%;
+	float: left;
+}
+nav{
+	width: 30%;
+	float: right;
+
+}
+nav ul{
+	list-style-type: none;
+}
+nav li{
+	float: left;
+	margin-right: 10px;
+}
+hgroup h1{
+	font-size: 2em;
+}
+section h1{
+	text-align: center;
+	font-size: 1.5em;
+}
+hgroup h2{
+	font-size: 1.4em;
+}
+
+section {
+	line-height: 20px;
+	border-width: 5px;
+	border-color: green;
+	border-style: double;
+	padding: 5px;
+}
+footer{
+	background-color: green;
+	color: black;
+	padding: 10px;
+	text-align: center;
+}
+hr {
+	border-color: green;
+	border-style: double;
+
+}
