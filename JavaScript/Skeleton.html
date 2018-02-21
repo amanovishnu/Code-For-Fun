@@ -1,15 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
-	<head>
-		<title>JavaScript</title>
-	</head>
-	<body>
-		<header></header>
-		<section>
-			<script type="text/javascript">
-				document.write("Hello World");
-			</script>
-		</section>
-		<footer>www.google.com</footer>
-	</body>
+<html>
+<head>
+	<title>JavaScript</title>
+</head>
+<body style="text-align:center">
+	<h1>JavaScript can show and Hide html Elements</h1>
+	<h2 id="demo">I am HTML Content</h2>
+	<button onclick="document.getElementById('demo').style.display='none'">Click to Hide Me</button>
+	<button onclick="document.getElementById('demo').style.display='block'">Click to Show Me</button>
+</body>
 </html>
