@@ -11,5 +11,6 @@
     "angular2"
   ],
   "author": "ManoVishnu",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {}
 }
