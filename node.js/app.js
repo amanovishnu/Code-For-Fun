@@ -8,3 +8,4 @@ http.createServer(function(req,res){
     res.end();
 }).listen(8080);
 console.log('Server Running on Port 8080');
+console.log('Server was created by Mano');
