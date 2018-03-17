@@ -1,0 +1,15 @@
+{
+  "name": "node-demo",
+  "version": "1.0.0",
+  "description": "This is a Demo Repository Created for Learning node js and other technologies releated to node ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node.js",
+    "angular2"
+  ],
+  "author": "ManoVishnu",
+  "license": "MIT"
+}
