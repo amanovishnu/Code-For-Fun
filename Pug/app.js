@@ -1,2 +1,3 @@
 let pug = require('pug');
-console.log(pug.renderFile('template.pug',{name:'Mano'}));
+let compiledFunction = pug.compileFile('template.pug');
+console.log(compiledFunction({name:'Timothy'}));
