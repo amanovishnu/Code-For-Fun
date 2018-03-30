@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>JQuery Introduction</title>
+  <script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+  <style>
+    body {
+      font-size: 17px;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f4f4f4;
+      line-height: 1.5em;
+    }
+    header {
+      background: #333333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+      border-bottom: 4px #000 solid;
+      margin-bottom: 10px;
+    }
+    .container {
+      width: 90%;
+      margin: auto;
+      padding: 18px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>JQuery Crash Course</h1>
+  </header>
+  <div class="container">
+    <h1 id="heading1">Heading One</h1>
+    <p id="para1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam perferendis in architecto porro aspernatur eos eligendi
+      blanditiis tempora, quae, hic atque minima exercitationem ducimus consequuntur quos voluptate consectetur repellat
+      eveniet magni. Aut mollitia non corporis officia temporibus quaerat placeat perspiciatis, eligendi asperiores obcaecati
+      rerum ut. Est saepe ipsam laudantium odio.</p>
+    <h1 id="heading2">Heading Two</h1>
+    <p class="para2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam perspiciatis neque nisi, a beatae esse explicabo ex praesentium
+      cum nihil nam enim porro. Cupiditate, molestiae ea voluptates officia quis, numquam mollitia inventore harum dignissimos
+      libero repudiandae corrupti accusamus nemo sunt laboriosam quam nobis quas obcaecati autem necessitatibus asperiores
+      maiores eum.</p>
+    <h1 id="heading3">Heading Three</h1>
+    <p id="para3"><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi optio ipsum quo! Voluptatem a facere repudiandae illum possimus, officia quasi culpa quaerat quis eos eligendi tenetur autem illo nostrum laboriosam unde earum, eius iure reprehenderit natus eum maiores quos! Iusto placeat nulla aliquid. Aperiam dignissimos necessitatibus placeat! Culpa, mollitia delectus.</span></p>
+  </div>
+  <script>
+    $(document).ready(function(){
+      //$('h1#heading1').hide();
+      //$('#heading2').toggle();
+      //$('para2').hide();
+      //$('h1#heading1').hide();
+      //$('p').css('color','red');
+      //$('h1#heading1').css('font-style','italic');
+      $('.span').css('font-family','consolas');
+    });
+  </script>
+</body>
+
+</html>
