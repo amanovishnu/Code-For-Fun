@@ -1,0 +1,17 @@
+{
+  "name": "gulp-starter-pack",
+  "version": "1.0.0",
+  "description": "Gulp-Starter-Pack for Front-End-Projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Gulp.js"
+  ],
+  "author": "Mano Vishnu",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}
