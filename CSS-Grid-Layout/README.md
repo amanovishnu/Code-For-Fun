@@ -15,3 +15,4 @@
 * grid-column-stop: integer;
 * grid-column : x/y or x/span y; `shorthand property for grid-column-start & grid-column-stop`
 * grid-area : row-start/column-start/row-end/column-end `shorthand property for grid-column & grid-row` 
+* grid-template-area : `'grid-area-name'`;
