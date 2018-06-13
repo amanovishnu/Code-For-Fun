@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS-GRID-LAYOUT</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <style>
+        body{
+            padding: 10px;
+            text-align: left;
+        }
+        .one{
+            grid-area: header;
+        }
+        .two{
+            grid-area: main; 
+        }
+        .three {
+            grid-area: menu;
+        }
+        .four{
+            grid-area: sidebar;
+        }
+        .five{
+            grid-area: footer;
+        }
+        .grid-container{
+            display: grid;
+            grid-gap: 10px;
+            grid-template-areas: 'header header header header header header' 'sidebar sidebar menu menu main main' ' sidebar sidebar footer footer footer footer';
+            grid-auto-rows: minmax(100px,auto);
+            align-items: strecth;
+        }
+        .grid-container > div {
+            background-color:bisque;
+            color: black;
+            font-weight: bold;
+            padding: 10px;
+            border: 1px black solid;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="one">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit praesentium in hic sapiente voluptate fuga ipsam voluptatem alias. Quidem suscipit magnam sed fugiat autem obcaecati quos pariatur sunt nobis consequatur Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, eum. Lorem, ipsum dolor. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, pariatur? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore culpa assumenda suscipit sit non illo velit vel neque modi fugit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati ullam maiores soluta quo ipsam facilis molestias sapiente numquam, quidem, odio hic commodi, repellendus voluptatum. Quos reiciendis ipsa labore aspernatur magnam. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias, magni.</p>
+        </div>
+        <div class="two">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis ipsum magnam quam sunt facere, placeat laborum nemo in ipsa laboriosam. lorem2</p>
+        </div>
+        <div class="three">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat officia dolor porro voluptates et distinctio dolore explicabo quas voluptate tenetur?</p>
+        </div>
+        <div class="four">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus consequuntur voluptatem nisi voluptate repellat laborum porro laboriosam, perferendis sequi, dolore neque quis iure inventore vero rerum nesciunt exercitationem doloremque assumenda, modi obcaecati. Excepturi doloremque sed, optio quam totam esse nostrum, iste vitae dolor necessitatibus recusandae veritatis voluptates in illum incidunt?</p>
+        </div>
+        <div class="five">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum sit adipisci cumque tempora officia incidunt expedita suscipit corporis consequatur ex. Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, possimus?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis, earum?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi, ullam?</p>
+        </div>
+
+    </div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+</body>
+</html>

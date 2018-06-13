@@ -1,3 +1,2 @@
-Mano = int(input("Enter a Number:"))
-for i in range(Mano):
-	print(Mano)
+mano = input("Enter a Number" )
+print(mano)
