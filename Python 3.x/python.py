@@ -27,3 +27,44 @@ twoday = [10,25,15,45,0,78]
 # in python lists are enclosed with square brackets
 oneday[0]="Zues"
 print(oneday)
+"""
+    lists are ordered
+    changeable
+    allows Duplicate Items
+"""
+# lists can also be defined by using an inbuilt constructor like list()
+newlist = list(("Zues","Posideon","Aries"))
+print(newlist)
+'''
+    append() method to add new items to list at last
+    remove() method to remove an item from the list
+    len() function to findout the length of the list
+    clear() method to remove all the list items from the list
+    copy() method returns the copy of list
+    count() method returns the number of elements with specific name
+    reverse() method reverses the list
+    pop() method removes the element at specific position
+    insert() method adds the element at specific position
+    index() method returns the index of first element with specified value
+    extend() method adds one list to another list
+
+
+'''
+list = ["one","two","Three"]
+print(list)
+list.append('Four')
+print(list)
+# print(list.append('Aloha')
+# list.clear()
+list.remove('one')
+print(list)
+var = list.copy()
+var.append('this is list two')
+print(var)
+print(var.count("two"))
+alaska = ['me','you','pg']
+print(alaska.reverse())
+# print(alaska)
+sore = ['on','by','meow','jack']
+print(sore.sort())
+
