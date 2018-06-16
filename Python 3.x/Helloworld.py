@@ -91,3 +91,20 @@ variable = 0+5j
 print(variable)
 variable = 0-5j
 print(variable)
+""" Python is a Procedural Language
+    Python is a Object Oreinted Programming Language
+    Python is a Modular language
+    Python is also a Scripting Language
+    Altast Python is a General Purpose high level Programming Language
+"""
+# Casting in Python Contains Three Functions (atleast for now)
+# int() to  convert int to int float to int string to int => if the string contains a whole number
+# float() to convert float to int float to float string to float providing the string contains a float or int
+# str() to convert int to str float to str and str to str
+# Mano = int(input("Whats Your name Lady? "))
+# print(Mano)
+variable = 45
+print(float(variable))
+# End of File Hellowworld.py
+# Auhor: Manovishnu
+# Date: 16062018
