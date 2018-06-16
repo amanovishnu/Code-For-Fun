@@ -34,8 +34,8 @@ print(name)
 name = "geekymano"
 print (name)
 # python uses + symbol or concatenation operator to join a string and string or a variable and a string
-print(name+"is a Geek")
-print(name + "is a Machine Learning Enthusiast")
+print(name+" is a Geek")
+print(name + " is a Machine Learning Enthusiast")
 # in Python we can use concatenation operator to also join a string and a string
 print("geekymano"+" "+"owns this Repository")
 print("Python "+"is "+"a "+"General "+"Purpose "+"Programming "+"Language")
@@ -44,5 +44,28 @@ print("Pyton"+" "+"was"+" "+"Created"+" "+"by"+" "+"Guido Van Rossum")
 x= 15554654
 print(x)
 print(x+456798798)
-x = "mano"
-print(x+5)
+x = 5
+# print(x+"Mano")
+# if you try to combine a string and a number or a number and a string it will result in a error
+''' in python there are three Numeric types
+    int
+    float
+    complex
+'''
+int = 5
+print(int)
+float = 1.05
+print(float)
+complex = 1j
+print(complex)
+# to verify the data type of the variable use the type() function which results out the data type of the given parameter
+print(type(int))
+print(type(float))
+print(type(complex))
+# int or integer is a whole number +ve or -ve without decimal point it can be of unlimited or infinite length
+myintvariable = 1
+print(myintvariable)
+myintvariable = -465456467987987
+print(myintvariable)
+print(type(myintvariable))
+
