@@ -68,4 +68,26 @@ print(myintvariable)
 myintvariable = -465456467987987
 print(myintvariable)
 print(type(myintvariable))
-
+# float is number with +ve or -ve values with decimal point it can be also of unlimited length similar to int
+myfloat = -1.0456465456
+print(myfloat)
+myfloat = 0.4545698898
+print(myfloat)
+print(type(myfloat))
+# floats can be defined with scientific letters like e to denote the power of 10
+mynum = 2e3
+print(mynum)
+# mynum-ve = 2e-3
+# print(mynum-ve)
+# python variable names cannot use special characters except underscore so the above line is not valid
+mynum2 = 2e-3
+print(mynum2)
+a = -7E3
+print(a)
+# Complex Numbers are those numbers with a Real Part and a Imaginary part but in python this numbers are represented with J  for the imaginary part like 5j or 0+5j
+complexvariable = 5j
+print(complexvariable)
+variable = 0+5j
+print(variable)
+variable = 0-5j
+print(variable)
