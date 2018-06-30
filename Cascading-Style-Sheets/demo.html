@@ -4,42 +4,121 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>FlexBox</title>
+    <title>Responive Flexbox Website</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <style>
-        * {
-            font-family: monospace;
+        *{
+            box-sizing: border-box;
         }
-        .flex-container{
+        body{
+            font-family: 'Roboto', sans-serif;
+            /* background-color: darkorchid; */
+            /* border: 1px solid black; */
+            margin: 0px;
+        }
+        .header {
+            text-align: center;
+            padding: 30px;
+            background-color: blueviolet;
+            color: white;
+            /* line-height: 15px; */
+            /* font-size: 5em; */
+        }
+        .navbar{
             display: flex;
-            /* flex-direction: row-reverse; */
-            /* flex-wrap: wrap-reverse; */
-            /* flex-flow: column wrap; */
-            background-color: dodgerblue;
-            /* justify-content: space-around; */
-            flex-wrap: wrap;
-            align-items: baseline;
-            height: 200px;;
+            background-color: black;
         }
-        .flex-container div {
+        .navbar a {
+            color: white;
+            padding: 15px 20px;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        .navbar a:hover{
+            background-color: bisque;
             color: black;
-            padding: 10px 20px;
+        }
+        .row{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .side{
+            flex: 0 1 23%;
             background-color: #efefef;
-            margin: 10px;
-            font-size: 2em;
+            padding:20px;
+            text-align: center;
+        }
+        .fakeimg{
+            /* height: 55%; */
+            background-color: #aaa;
+            width: 100%;
+            /* background-color: sandybrown; */
+            padding: 20px;
+            /* border: 5px solid black; */
+        }
+        .main{
+            flex: 0 1 77%;
+            padding: 20px;
+        }
+        .footer{
+            padding: 20px;
+            text-align: center;
+            background-color: #aba;
+        }
+        @media screen and (max-width:500px) {
+            .navbar{
+                flex-direction: column;
+            }
+            .row {
+                flex-direction: column;
+            }
+        }
+        @media screen and (max-width:700px) {
+            .row {
+                /* flex-direction: column; */
+            }
+            .side {
+                flex: 0 1 40%;
+            }
+            .main{ 
+                flex: 0 1 60%;
+            }
         }
     </style>
 </head>
 <body>
-    <div class="flex-container">
-        <div>1</div>
-        <div>2</div>
-        <div>3</div>
-        <div>1</div>
-        <div>2</div>
-        <div>3</div>
-        <div>1</div>
-        <div>2</div>
-        <div>3</div>
+    <header class="header">
+        <h1>Responive Flex Box</h1>
+        <p>A Webpage Built Using Flexbox for Testing </p>
+    </header>
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a href="#">Services</a>
+        <a href="#">Products</a>
+        <a href="#">Contact</a>
     </div>
+    <div class="row">
+        <div class="side">
+            <h3>ABOUT ME</h3>
+            <div class="fakeimg" style="height: 200px;">Image</div>
+            <h5>A Photo of Me</h5>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <h4> More Text</h4>
+            <div class="fakeimg" style="height: 50px;">Image</div>  <br>
+            <div class="fakeimg" style="height: 50px;">Image</div>  <br>
+            <div class="fakeimg" style="height: 50px;">Image</div>
+        </div>
+        <div class="main">
+            <h1>Title heading</h1>
+            <h5>Title Description, Jun 29, 2018</h5>
+            <div class="fakeimg" style="height: 300px;">Image</div>
+            <h3>Some Lorem Epsum</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et corporis ab cumque tempore. Temporibus ad impedit cumque delectus sapiente, beatae ea earum est accusamus quasi sint reprehenderit officiis repellat illum modi. Veniam fugit repudiandae reprehenderit explicabo fuga nostrum molestiae optio quam porro est obcaecati aliquam nemo, labore voluptatibus culpa dolores? Aliquid quia numquam architecto minus non consequatur perferendis repellendus dolore neque accusantium qui voluptate minima officiis perspiciatis, tenetur incidunt ducimus explicabo deleniti asperiores, pariatur voluptas quod nesciunt molestiae? Enim est quas esse sed nam officiis ipsam aspernatur repudiandae quam neque?</p>
+        </div>
+    </div>
+    <div class="footer">
+        <h1>Footer</h1>
+    </div>
+    
 </body>
 </html>
