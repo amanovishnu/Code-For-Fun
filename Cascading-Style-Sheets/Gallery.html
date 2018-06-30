@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gallery-Flex</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0px;
+            font-family: 'Roboto', sans-serif;
+            background-color: white;
+        }
+        .header{
+            text-align: center;
+            padding: 20px;
+            color: rgb(163, 0, 245);
+            /* margin-bottom: 50px;  */
+        }
+        .row{
+            display: flex;
+            flex-wrap: wrap;
+            padding: 10px 4px;
+            background-color:none;
+        }
+        .column{
+            flex: 25px;
+            max-width: 25%;
+            padding: 0 4px;
+        }
+        .column img {
+            margin-top: 8px;
+            vertical-align: middle;
+            border: 2px solid black;
+        }
+        @media (max-width:800px) {
+            .column {
+                flex: 50%;
+                max-width: 50%
+            }
+        }
+        @media (max-width:400px) {
+            .column {
+                flex: 100%;
+                max-width: 100%
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <div class="row">
+        <div class="column">
+            <img src="https://images.pexels.com/photos/886470/pexels-photo-886470.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" style="width: 100%;">
+            <img src="https://images.pexels.com/photos/670061/pexels-photo-670061.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="" style="width: 100%;">
+            <img src="https://images.pexels.com/photos/879356/pexels-photo-879356.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="" style="width: 100%;">
+            <img src="https://images.pexels.com/photos/1190295/pexels-photo-1190295.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="" style="width: 100%">
+            <img src="https://images.pexels.com/photos/1181555/pexels-photo-1181555.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="" style="width:100%;">
+            <img src="https://images.pexels.com/photos/610294/pexels-photo-610294.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="" style="width:100%;">
+            <img src="https://images.pexels.com/photos/1181392/pexels-photo-1181392.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="" style="width:100%;">
+            <img src="https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="" style="width:100%;"> 
+        </div>
+        <div class="column">
+            <img src="https://images.pexels.com/photos/892220/pexels-photo-892220.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="" style="width:100%;">
+            <img src="https://images.pexels.com/photos/450441/pexels-photo-450441.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="" style="width:100%;">
+            <img src="https://images.pexels.com/photos/1172809/pexels-photo-1172809.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="" style="width:100%;">
+            <img src="https://images.pexels.com/photos/862517/pexels-photo-862517.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="" style="width:100%;">
+            <img src="https://images.pexels.com/photos/1191118/pexels-photo-1191118.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="" style="width:100%;">
+            <img src="https://images.pexels.com/photos/1027079/pexels-photo-1027079.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="" style="width:100%;">
+            <img src="https://images.pexels.com/photos/590141/pexels-photo-590141.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="" style="width:100%;">
+            <img src="https://images.pexels.com/photos/1189554/pexels-photo-1189554.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="" style="width:100%;">
+        </div>
+        <div class="column">
+            <img src="https://images.pexels.com/photos/1018484/pexels-photo-1018484.jpeg?auto=compress&cs=tinysrgb&h=350" alt="" style="width:100%;">
+            <img src="https://images.pexels.com/photos/1179724/pexels-photo-1179724.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="" style="width:100%;">
+            <img src="https://images.pexels.com/photos/968243/pexels-photo-968243.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="" style="width:100%;">
+            <img src="https://images.pexels.com/photos/297816/pexels-photo-297816.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="" style="width:100%;">
+            <img src="https://images.pexels.com/photos/1048256/pexels-photo-1048256.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="" style="width:100%;">
+            <img src="https://images.pexels.com/photos/981062/pexels-photo-981062.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="" style="width:100%;">
+            <img src="https://images.pexels.com/photos/1191503/pexels-photo-1191503.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="" style="width:100%;">
+            <img src="https://images.pexels.com/photos/1191639/pexels-photo-1191639.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="" style="width:100%;">
+        </div>
+        <div class="column">
+            <img src="https://images.pexels.com/photos/295821/pexels-photo-295821.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="" style="width:100%;">
+            <img src="https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="" style="width:100%;">
+            <img src="https://images.pexels.com/photos/837500/pexels-photo-837500.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="" style="width:100%;">
+            <img src="https://images.pexels.com/photos/1038940/pexels-photo-1038940.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="" style="width:100%;">
+            <img src="https://images.pexels.com/photos/730896/pexels-photo-730896.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="" style="width:100%;">
+            <img src="https://images.pexels.com/photos/853168/pexels-photo-853168.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="" style="width:100%;">
+            <img src="https://images.pexels.com/photos/1046159/pexels-photo-1046159.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="" style="width:100%;">
+            <img src="https://images.pexels.com/photos/1029604/pexels-photo-1029604.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="" style="width:100%;">
+          </div>
+    </div>
+</body>
+</html>
