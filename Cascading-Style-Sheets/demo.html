@@ -4,31 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>TestDocument</title>
+    <title>FlexBox</title>
     <style>
         * {
             font-family: monospace;
         }
-        #boxone{
-            box-sizing: content-box;
-            width: 500px;
-            border: 5px solid black;
-            padding: 5px;
-            height: 100px;
+        .flex-container{
+            display: flex;
+            /* flex-direction: row-reverse; */
+            /* flex-wrap: wrap-reverse; */
+            /* flex-flow: column wrap; */
+            background-color: dodgerblue;
+            /* justify-content: space-around; */
+            flex-wrap: wrap;
+            align-items: baseline;
+            height: 200px;;
         }
-        #boxtwo {
-            box-sizing: border-box;
-            width: 500px;
-            height: 100px;
-            border: 5px solid rgb(0, 0, 0);
-            padding: 10px 10px;
-           
+        .flex-container div {
+            color: black;
+            padding: 10px 20px;
+            background-color: #efefef;
+            margin: 10px;
+            font-size: 2em;
         }
     </style>
 </head>
 <body>
-    <p id="boxone">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe amet doloremque fuga asperiores error, sint magni architecto provident. Officia quo repudiandae, obcaecati excepturi voluptates maxime? Alias facilis repellat odio natus.</p>
-    <br>
-    <p id="boxtwo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos velit itaque cupiditate neque assumenda temporibus dicta voluptate illo adipisci commodi impedit tempore molestiae expedita, et dolores! Voluptate nobis eligendi sint!</p>
+    <div class="flex-container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
 </body>
 </html>
