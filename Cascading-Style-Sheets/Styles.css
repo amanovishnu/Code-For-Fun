@@ -1,0 +1,14 @@
+body {
+    font-family: arial;
+}
+#boxone {
+    width: 350px;
+    padding: 50px;
+    box-sizing: content-box;
+    margin: 20px;
+    border: 2px soild red;
+}
+#boxtwo {
+    width: 350px;
+    padding: 50px;
+}
