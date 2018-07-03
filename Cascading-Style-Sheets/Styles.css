@@ -1,25 +1,6 @@
-* {
-    box-sizing: border-box;
-}
 body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0px;
-    min-width: 1355px;
+    font-family: arial;
 }
-#subheader {
-    font-size: 14px;
-}
-#subheader p {
-    display: inline-block;
-    border: 2px solid black;
-    padding: 5px;
-    margin: 5px;
-}
-#subheader a {
-    color: black;
-    text-decoration: none;
-    margin: 5px;
-    border: 2px solid black;
-    padding: 5px;
-    float: right;
+p{
+    text-align: center;
 }
