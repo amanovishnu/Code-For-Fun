@@ -1,0 +1,71 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    margin: 0;
+}
+#SubHeader {
+    padding: 5px 10px;
+    background-color: black;
+    font-weight: 00;
+    color: white;
+}
+#SubHeader a {
+    float: right;
+    margin: 0 5px;
+    text-decoration: none;
+    color: white;
+}
+#SubHeader:after {
+    display: block;
+    content: "";
+    clear: both;
+}
+#trash {
+    width: 100%;
+    clear: both;
+}
+#MainHeader {
+    height: 100px;
+    background-color: orange;
+    display: flex;
+}
+#Logo {
+    width: 16%;
+    font-family: 'Pacifico', cursive;
+    font-size: 50px;
+    text-align: center;
+}
+#SearchBar {
+    width: 60%;
+}
+
+#CartDetails {
+    width: 24%;
+}
+#CartDetails a {
+    color: black;
+    background-color: white;
+    text-decoration: none;
+    border: 1px solid black;
+    padding: 10px 25px;
+    margin-top: 100px;
+    margin-left: 21px
+}
+#NavigationBar {
+    background-color: orange;
+    padding: 10px 5px;
+    text-align: center;
+    box-shadow: 1px 2px 5px gray;
+}
+#NavigationBar a {
+    color: black;
+    text-decoration: none;
+    padding: 10px 24px;
+    font-size: 14px;
+    transition: all .5s ease;
+}
+#NavigationBar a:hover {
+    transition: a11 .5s ease;
+    color: white;
+    background-color: black;
+}
