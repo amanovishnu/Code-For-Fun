@@ -63,7 +63,7 @@ body {
     color: black;
     text-decoration: none;
     padding: 10px 24px;
-    font-size: 14px;
+    font-size: 13px;
     transition: all .5s ease;
 }
 #NavigationBar a:hover {
