@@ -1,0 +1,48 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+}
+#Wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #666;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.box {
+/*    height: 100px;*/
+    flex: 1 0 21%;
+    justify-content: space-around;
+    background-color: #eee;
+    margin: 1%;
+    padding: 1%;
+    box-sizing: border-box;
+    font-size: 14px;
+    line-height: 1.5em;
+/*    box-shadow: 1px 1px 8px gray;*/
+    text-align: center;
+}
+.box h1 {
+    font-weight: 500;
+    text-align: center;
+}
+
+.box ul {
+    list-style-type: none;
+    padding: 0px;
+}
+
+.one {
+    text-align: left;
+    font-weight: 500;
+}
+.four {
+    text-align: left;
+}
+#WrapperFoot {
+/*    height: 100px;*/
+    background-color: black;
+}
+#WrapperFoot p{
+   color: white;
+}
