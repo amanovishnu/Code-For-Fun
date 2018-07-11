@@ -13,9 +13,9 @@ body {
 .wrapper div {
    padding: 20px; 
     text-align: center;
-    background-color: red;
+    background-color: black;
     color: white;
 }
 .wrapper div:nth-child(even) {
-    background-color: blue;
+    background-color: #ccc;
 }
