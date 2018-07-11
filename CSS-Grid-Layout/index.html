@@ -4,29 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Grid-LayOut</title>
-    <style>
-        .item1 {grid-area: header;}
-        .item2 {grid-area: menu;}
-        .item3 {grid-area: main;}
-        .item4 {grid-area: right;}
-        .item5 {grid-area: footer;}
+    <title>CSS-GRID</title>
+    <style media="screen">
+        body {
+            font-family: cursive;
+        }
+        /* .item1{grid-area: header;}
+        .item2{grid-area: side;}
+        .item3{grid-area: main;}
+        .item4{grid-area: navigation;}
+        .item5{grid-area: footer;} */
         .grid-container {
             display: grid;
-            grid-template-areas: 'header header header header header' 'menu main main right right' 'menu footer footer footer footer';
-            grid-gap: 10px;
-            background-color: #2196F3;
+            /* grid-template-areas: 'header header header header  header  header' 'side main main main main navigation' 'side footer  footer footer footer footer'; */
+            grid-template-columns: repeat(2,20%), repeat(1,25%);
+            grid-gap: 5px;
+            background-color: black;
             padding: 10px;
+
         }
         .grid-container > div {
-            background-color: rgba(255,255,255,0.8);
+            /* padding:20px 0; */
             text-align: center;
-            padding: 20px 0;
+            padding: 20px 0px;
+            background-color: #eee;
             font-size: 30px;
         }
         @media screen and (max-width:500px) {
+            body {
+                font-family: Arial;
+                /* font-size: 10px; */
+            }
             .grid-container {
                 display: block;
+                background-color:black;
+            }
+            .grid-container > div {
+                border: 2px solid black;
+                font-size: 20px;
             }
         }
     </style>
@@ -34,9 +49,9 @@
 <body>
     <div class="grid-container">
         <div class="item1">Header</div>
-        <div class="item2">Menu</div>
+        <div class="item2">Side</div>
         <div class="item3">Main</div>
-        <div class="item4">Right</div>
+        <div class="item4">Navigation</div>
         <div class="item5">Footer</div>
     </div>
 </body>
