@@ -7,7 +7,7 @@
     <title>CSS-GRID</title>
     <style media="screen">
         body {
-            font-family: cursive;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
         }
         /* .item1{grid-area: header;}
         .item2{grid-area: side;}
@@ -17,11 +17,15 @@
         .grid-container {
             display: grid;
             /* grid-template-areas: 'header header header header  header  header' 'side main main main main navigation' 'side footer  footer footer footer footer'; */
-            grid-template-columns: repeat(2,20%), repeat(1,25%);
+            grid-template-columns: auto auto auto;
             grid-gap: 5px;
             background-color: black;
             padding: 10px;
 
+        }
+        .item1 {
+            grid-column-start: 1;
+            grid-column-end: 3;
         }
         .grid-container > div {
             /* padding:20px 0; */
