@@ -1,7 +1,21 @@
 body {
-    font-size: 14px;
-    padding: 15px;
-    border: 1px solid black;
-    box-sizing: border-box;
-    text-align: justify;
+    font-family: taohma;
+}
+.wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+    background-color: #eee;
+    font-weight: 600;
+    font-size: 20px;
+    display: grid;
+    grid-template-columns: repeat(3,33.3%);
+}
+.wrapper div {
+   padding: 20px; 
+    text-align: center;
+    background-color: red;
+    color: white;
+}
+.wrapper div:nth-child(even) {
+    background-color: blue;
 }
