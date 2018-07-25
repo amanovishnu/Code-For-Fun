@@ -1,21 +1,22 @@
-body {
-    font-family: taohma;
-}
-.wrapper {
-    max-width: 960px;
-    margin: 0 auto;
-    background-color: #eee;
-    font-weight: 600;
-    font-size: 20px;
-    display: grid;
-    grid-template-columns: repeat(3,33.3%);
-}
-.wrapper div {
-   padding: 20px; 
+#Wrapper {
+/* min-width: 600px;*/
+ background-color: #eee;
+display: grid;
+grid-template-columns: auto auto auto;
     text-align: center;
+    font-size: 95px;
+    
+}
+#Wrapper > div:nth-child(even) {
     background-color: black;
     color: white;
 }
-.wrapper div:nth-child(even) {
-    background-color: #ccc;
+@media screen and (max-width:500px) {
+    #Wrapper {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    #Wrapper > div {
+        width: 100%;
+    }
 }
