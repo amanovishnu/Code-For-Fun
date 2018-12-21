@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: monospace;
+            text-align: center;
+        }
+        input[type=text] {
+            padding:5px;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <h3>Enter any Eight Numbers</h3>
+        <input type="text" id="n1"><br><br>
+        <input type="text" id="n2"><br><br>
+        <input type="text" id="n3"><br><br>
+        <input type="text" id="n4"><br><br>
+        <input type="text" id="n5"><br><br>
+        <input type="text" id="n6"><br><br>
+        <input type="text" id="n7"><br><br>
+        <input type="text" id="n8"><br><br>
+        <input type="submit" onclick="getmax()">
+    </form>
+    <h1 id="max"></h1>
+    <script>
+        function getmax() {
+            n1 = document.getElementById('n1').value;
+            n2 = document.getElementById('n2').value;
+            n3 = document.getElementById('n3').value;
+            n4 = document.getElementById('n4').value;
+            n5 = document.getElementById('n5').value;
+            n6 = document.getElementById('n6').value;
+            n7 = document.getElementById('n7').value;
+            n8 = document.getElementById('n8').value;
+
+            var arra = [n1, n2, n3, n4, n5, n6, n7, n8];
+            console.log(Math.max(...arra));
+            var max = Math.max(...arra);
+            document.getElementById('max').innerHTML = "Max Number:" + max;
+        }
+    </script>  
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm bg-white navbar-white">
+        <a href="#" class="navbar-brand"><i class="fas fa-door-open"></i> WayOut</a>
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a href="#" class="nav-link active">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Products</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Services</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <div class="container">
+                <div class="row">
+                    
+                    <div class="col-sm-4 mt-4">
+                        <div class="card">
+                            <!-- <h4 class="card-header bg-primary text-center text-white">Feedback Form</h4> -->
+                            <div class="card-body">
+                                <label for="Name">Username</label>
+                                <input type="text" class="form-control mb-2" placeholder="Enter your username or email">
+                                <label for="Name">Password</label>
+                                <input type="password" class="form-control mb-2" placeholder="Enter your password">
+                                <label for="Name">Nationality</label>
+                                <select class="custom-select mb-2" id="inputGroupSelect02">
+                                    <option selected>Choose your country</option>
+                                    <option value="1">India</option>
+                                    <option value="2">America</option>
+                                    <option value="3">China</option>
+                                </select>
+                                <label for="Feedback">Feedback</label>
+                                <textarea name="Feedback" id="none" cols="20" rows="5" class="form-control mb-3" placeholder="Enter your feedback here"></textarea>
+                                <button type="button" class="btn btn-primary btn-block text-white">Submit your Feedback</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-8 mt-5 text-center text-primary" id="content">
+                        <h1 style="font-size: 100px; font-weight:400"><i class="fas fa-door-open"></i> WayOut</h1>
+                        <h6 style="font-weight: 400">at WayOut we value our customers feedback and consider them in making our product as friendly as possible</h5>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="fixed-bottom text-center pb-2"><a href="#" class="footer-text">Created by Manovishnu for Verzeo 2018</a></footer>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

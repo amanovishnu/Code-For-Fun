@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Total of Marks</title>
+    <style>
+        body{
+            font-family: monospace;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Enter Your Marks Here</h1>
+    <form action=""></form>
+        <label for="telugu">Telugu</label>
+        <input type="number" id="telugu" required>
+        <label for="hindi">Hindi</label>
+        <input type="number" id="hindi">
+        <label for="english">English</label>
+        <input type="number" id="english">
+        <label for="maths">Maths</label>
+        <input type="number" id="maths">
+        <label for="science">Science</label>
+        <input type="number" id="science">
+    </form>
+    <br><br>
+    <input type="submit" onclick="total()">
+    <h1 id="total"></h1>
+    <h1 id="percentage"></h1>
+    <script>
+
+       
+        function total(){
+             var telugu = Number(document.getElementById('telugu').value);
+             var hindi = Number(document.getElementById('hindi').value);
+             var english = Number(document.getElementById('english').value);
+             var maths = Number(document.getElementById('maths').value);
+             var science = Number(document.getElementById('science').value);
+             var total=telugu+hindi+english+maths+science;
+             document.getElementById('total').innerHTML="Total: "+ total;
+             document.getElementById('percentage').innerHTML="Percentage: "+ total/5 +"%";
+        }
+
+    </script>
+</body>
+</html>

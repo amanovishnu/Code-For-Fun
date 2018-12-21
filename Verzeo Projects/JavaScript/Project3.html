@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Employee <Datal></Datal></title>
+    <style>
+        h1{
+            text-align: left;
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="name"></h1>
+    <h1 id="age"></h1>
+    <h1 id="salary"></h1>
+    <h1 id="designation"></h1>
+    <h1 id="organisation"></h1>
+    <script>
+        employee = {"name":"Mark Doe",
+            "age":"25",
+            "salary":"4500$",
+            "designation":"Senior Software Engineer",
+            "organisation":"Microware"
+        }
+        document.getElementById('name').innerHTML = "Name: " + employee.name;
+        document.getElementById('age').innerHTML = "Age: " + employee.age;
+        document.getElementById('salary').innerHTML = "Salary: " + employee.salary;
+        document.getElementById('designation').innerHTML = "Designation: " + employee.designation;
+        document.getElementById('organisation').innerHTML = "Organisation: " + employee.organisation;
+    </script>
+</body>
+</html>

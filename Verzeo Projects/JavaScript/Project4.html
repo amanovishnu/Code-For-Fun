@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Grade Predictor</title>
+    <style>
+        body{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+        <h1>Enter your Grade Here:</h1>
+        <input type="text" id="grades">
+        <input type="submit" onclick="check()">
+        <h1 id="result"></h1>
+        <script>
+            function check() {
+        
+            switch (document.getElementById('grades').value) {
+                case "A":
+                    document.getElementById('result').innerHTML = "Distinction";
+                    break;
+                case "B":
+                    document.getElementById('result').innerHTML = "Good";
+                    break;
+                case "C":
+                    document.getElementById('result').innerHTML = "Poor";
+                    break;
+                case "D":
+                    document.getElementById('result').innerHTML = "Fail";
+                    break;
+            
+                default:
+                    document.getElementById('result').innerHTML = "Better Luck Next Time";
+                    break;
+            }
+                
+            }
+        </script>
+</body>
+</html>
