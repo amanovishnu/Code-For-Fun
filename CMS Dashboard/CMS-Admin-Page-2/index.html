@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Analog | Dashboard</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Mano Vishnu">
+    <meta name="description" content="Admin Page Design in Bootstrap">
+    <link rel="shortcut icon" type="image/x-icon" href="http://cafeanalog.dk/volunteer/analogo.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/all.js"></script>
+</head>
+
+<body>
+    <!-- Start of Navbar -->
+    <nav class="navbar navbar-expand-sm navbar-light">
+        <a href="#" class="navbar-brand">ANALOG</a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a href="dashboard.html" class="nav-link">Dashboard</a>
+                </li>
+                <li class="nav-item">
+                    <a href="views.html" class="nav-link">Views</a>
+                </li>
+                <li class="nav-item">
+                    <a href="pages.html" class="nav-link">pages</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Welcome Mano</a>
+                </li>
+                <li class="nav-item">
+                    <a href="login.html" class="nav-link">Logout</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- End of Navbar -->
+
+    <!-- Start of Header -->
+    <header id="header">
+        <div class="container">
+            <div class="row">
+                <div class="col lg-10">
+                    <h1>
+                        <i class="fas fa-cog"></i> Dashboard
+                        <small>Manage your Site</small>
+                    </h1>
+                </div>
+                <div class="col-sm-2">
+                    <div class="dropdown">
+                        <button type="button" class="btn btn-outline-default dropdown-toggle text-light" data-toggle="dropdown" style="background-color:#ff4f00">Navigation Button</button>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item">Add User</a>
+                            <a href="#" class="dropdown-item">Add Page</a>
+                            <a href="#" class="dropdown-item">Add Content</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- End of Header -->
+
+    <!-- Start of breadcrumb Section -->
+    <section id="breadcrumb">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+    <!-- End of  breadcrumb Section -->
+
+    <!-- Start of Main Section -->
+    <section id="main">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="list-group">
+                        <a href="index.html" class="list-group-item active  list-color">
+                            <i class="fas fa-cog"></i> Dashboard</a>
+                        <a href="pages.html" class="list-group-item list-color2">
+                            <i class="far fa-address-book"></i> Pages
+                            <span class="badge badge-primary badge-pill float-right pill-color">105</span>
+                        </a>
+                        <a href="post.html" class="list-group-item list-color2">
+                            <i class="fas fa-pencil-alt"></i> Views
+                            <span class="badge badge-primary badge-pill float-right pill-color">45</span>
+                        </a>
+                        <a href="likes.html" class="list-group-item list-color2">
+                            <i class="fas fa-check"></i> Likes
+                            <span class="badge badge-primary badge-pill float-right pill-color">98</span>
+                        </a>
+                        <a href="comments.html" class="list-group-item list-color2">
+                            <i class="fas fa-comment-alt"></i> Comments
+                            <span class="badge badge-primary badge-pill float-right pill-color">85</span>
+                        </a>
+                    </div>
+                    <!-- Start of Progress bar -->
+                    <div class="card">
+                        <div class="card-body">
+                            <strong>Bandwidth : 80%</strong>
+                            <div class="progress progressbardash">
+                                <div class="progress-bar-striped progress-bar-animated color-progress" style="width:80%"></div>
+                            </div>
+                            
+                            <strong>Storage : 60%</strong>
+                            <div class="progress progressbardash">
+                                <div class="progress-bar-striped progress-bar-animated color-progress" style="width:50%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of Progress bar -->
+                </div>
+                
+                <div class="col-md-9">
+                    <!-- Start of Website Overview -->
+                    <div class="card">
+                        <div id="" class="card-header card-header2">Website Overview</div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="card-body text-center card-body2">
+                                        <h1>
+                                            <i class="fas fa-user"></i> 20</h1>
+                                        <h4>Users</h4>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="card-body text-center card-body2">
+                                        <h1>
+                                            <i class="far fa-file"></i> 45</h1>
+                                        <h4>Files</h4>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="card-body text-center card-body2">
+                                        <h1>
+                                            <i class="fas fa-pencil-alt"></i> 6</h1>
+                                        <h4>Changes</h4>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="card-body text-center card-body2">
+                                        <h1>
+                                            <i class="far fa-thumbs-up"></i> 65</h1>
+                                        <h4>Likes</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of Website Overview -->
+            
+                    <!-- Start of Table -->
+                    <div class="card">
+                        <div class="card-header card-header2">Latest Users</div>
+                        <div class="card-body">
+                            <table class="table table-hover table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Username</th>
+                                        <th>Email ID</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Mark Joseph</td>
+                                        <td>markjoseph456</td>
+                                        <td>mark@test.com</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Manovishnu</td>
+                                        <td>amanovishnu</td>
+                                        <td>geekymano@gmail.com</td>
+                                    </tr>
+                                    <tr>
+                                        <td>John Doe</td>
+                                        <td>johdoe123</td>
+                                        <td>john@test.com</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Emma Larry</td>
+                                        <td>emmalarry</td>
+                                        <td>emma@test.com</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- End of Table -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of Main Section -->
+
+    <!--Start of Jquery PopperJS  BootStrap.min.js -->
+    <script type="text/javascript" src="js/jquery-3.2.1.slim.min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!--End of Javascript Tags -->
+</body>
+    <!--Author:ManoVishnu -->
+    <!--Date:06-04-2018 -->
+    <!--Description:AdminPage for a Website -->  
+</html>
