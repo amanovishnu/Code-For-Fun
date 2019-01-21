@@ -792,12 +792,15 @@ extern void funlockfile (FILE *__stream) __attribute__ ((__nothrow__ , __leaf__)
 # 2 "WorkDoc.c" 2
 
 # 2 "WorkDoc.c"
-enum State {WORKING = 0, FAILED, FREEZED};
-enum State currState = 2;
-enum State FindState() {
-    return currState;
-}
+struct geeksforgeeks {
+    char name[10];
+    char street[30];
+    char city[50];
+    int pin;
+};
 int main(void) {
-    (FindState() == WORKING) ? printf("WORKING"):printf("NOT WORKING");
+    struct geeksforgeeks Hello;
+    Hello = {"Geeks","For","City",25};
+    printf("%d",Hello.pin);
     return 0;
 }

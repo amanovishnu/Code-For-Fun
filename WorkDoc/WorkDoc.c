@@ -1,10 +1,13 @@
 #include <stdio.h>
-enum State {WORKING = 0, FAILED, FREEZED};
-enum State currState = 2;
-enum State FindState() {
-    return currState;
-}
+struct geeksforgeeks {
+    char name[10];
+    char street[30];
+    char city[50];
+    int pin;
+};
 int main(void) {
-    (FindState() == WORKING) ? printf("WORKING"):printf("NOT WORKING");
+    struct geeksforgeeks Hello;
+    Hello = {"Geeks","For","City",25};
+    printf("%d",Hello.pin);
     return 0;
 }
