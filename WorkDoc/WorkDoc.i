@@ -800,7 +800,8 @@ struct geeksforgeeks {
 };
 int main(void) {
     struct geeksforgeeks Hello;
-    Hello = {"Geeks","For","City",25};
+    Hello.name = 'Chalk';
+
     printf("%d",Hello.pin);
     return 0;
 }

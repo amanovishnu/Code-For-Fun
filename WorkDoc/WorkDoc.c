@@ -1,14 +1,4 @@
-#include <stdio.h>
-struct geeksforgeeks {
-    char name[10];
-    char street[30];
-    char city[50];
-    int pin;
-};
+#include<stdio.h>
 int main(void) {
-    struct geeksforgeeks Hello;
-    Hello.name = 'Chalk';
-    
-    printf("%d",Hello.pin);
-    return 0;
+
 }
