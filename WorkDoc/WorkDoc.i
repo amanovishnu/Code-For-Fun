@@ -792,24 +792,8 @@ extern void funlockfile (FILE *__stream) __attribute__ ((__nothrow__ , __leaf__)
 # 2 "WorkDoc.c" 2
 
 # 2 "WorkDoc.c"
-extern int x;
-int z=10;
-typedef long long int LL;
-void calSquare(int);
-int main(void) {
-    const int a = 32;
-    char b = 'G';
-    extern int z;
-    LL c = 1000000;
-    int x = 15;
-    printf("Hello World\n");
-    printf("Value of Constant Variable:%d\n",a);
-    printf("Value of Character Varaible:%c\n",b);
-    printf("Value of TypeDef Variable:%lld\n",c);
-    printf("Value of Extern Variables X and Z:%d and %d\n",x,z);
-
-    return 0;
-}
-void calSquare(int arg) {
-    printf("The Square of %d is %d\n",arg, arg*arg);
+enum day {sunday = 1, monday, tuesday, wednesday, thursday, friday, saturday};
+int main (void) {
+    enum day d = thursday;
+    printf("%d",d);
 }
