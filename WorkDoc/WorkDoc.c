@@ -1,6 +1,10 @@
 #include <stdio.h>
-enum day {sunday = 1, monday, tuesday, wednesday, thursday, friday, saturday};
-int main (void) {
-    enum day d = thursday;
-    printf("%d",d);    
+enum State {WORKING = 0, FAILED, FREEZED};
+enum State currState = 2;
+enum State FindState() {
+    return currState;
+}
+int main(void) {
+    (FindState() == WORKING) ? printf("WORKING"):printf("NOT WORKING");
+    return 0;
 }

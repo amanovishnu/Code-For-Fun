@@ -792,8 +792,12 @@ extern void funlockfile (FILE *__stream) __attribute__ ((__nothrow__ , __leaf__)
 # 2 "WorkDoc.c" 2
 
 # 2 "WorkDoc.c"
-enum day {sunday = 1, monday, tuesday, wednesday, thursday, friday, saturday};
-int main (void) {
-    enum day d = thursday;
-    printf("%d",d);
+enum State {WORKING = 0, FAILED, FREEZED};
+enum State currState = 2;
+enum State FindState() {
+    return currState;
+}
+int main(void) {
+    (FindState() == WORKING) ? printf("WORKING"):printf("NOT WORKING");
+    return 0;
 }
